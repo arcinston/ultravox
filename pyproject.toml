@@ -1,0 +1,13 @@
+[project]
+name = "ultravox"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = [
+    "librosa>=0.10.2.post1",
+    "llvmlite>=0.43.0",
+    "numpy>=2.0.2",
+    "ruff>=0.8.0",
+    "transformers>=4.46.3",
+]
