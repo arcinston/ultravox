@@ -88,12 +88,14 @@ async def process_audio(
             }
         )
 
-    # Prepare input data for the pipeline
-    input_data = {"audio": audio_data, "turns": turns, "sampling_rate": sr}
+    tf_input = [d for d in turns]
+
+    input_data = {"audio": audio_data, "turns": tf_input, "sampling_rate": sr}
 
     # Call the pipeline
     try:
-        response = pipe(input_data, max_new_tokens=300)
+        response = pipe(input_data, max_new_tokens=512)
+
         # Log the response for debugging
         print("Pipeline response:", response)
 
