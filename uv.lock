@@ -671,6 +671,15 @@ wheels = [
 ]
 
 [[package]]
+name = "pydub"
+version = "0.25.1"
+source = { registry = "https://pypi.org/simple" }
+sdist = { url = "https://files.pythonhosted.org/packages/fe/9a/e6bca0eed82db26562c73b5076539a4a08d3cffd19c3cc5913a3e61145fd/pydub-0.25.1.tar.gz", hash = "sha256:980a33ce9949cab2a569606b65674d748ecbca4f0796887fd6f46173a7b0d30f", size = 38326 }
+wheels = [
+    { url = "https://files.pythonhosted.org/packages/a6/53/d78dc063216e62fc55f6b2eebb447f6a4b0a59f55c8406376f76bf959b08/pydub-0.25.1-py2.py3-none-any.whl", hash = "sha256:65617e33033874b59d87db603aa1ed450633288aefead953b30bded59cb599a6", size = 32327 },
+]
+
+[[package]]
 name = "pyyaml"
 version = "6.0.2"
 source = { registry = "https://pypi.org/simple" }
@@ -1077,7 +1086,9 @@ dependencies = [
     { name = "llvmlite" },
     { name = "numpy" },
     { name = "peft" },
+    { name = "pydub" },
     { name = "ruff" },
+    { name = "scipy" },
     { name = "sounddevice" },
     { name = "torch" },
     { name = "transformers" },
@@ -1091,7 +1102,9 @@ requires-dist = [
     { name = "llvmlite", specifier = ">=0.43.0" },
     { name = "numpy", specifier = ">=2.0.2" },
     { name = "peft", specifier = ">=0.13.2" },
+    { name = "pydub", specifier = ">=0.25.1" },
     { name = "ruff", specifier = ">=0.8.0" },
+    { name = "scipy", specifier = ">=1.14.1" },
     { name = "sounddevice", specifier = ">=0.5.1" },
     { name = "torch", specifier = ">=2.5.1" },
     { name = "transformers", specifier = ">=4.46.3" },
