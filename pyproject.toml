@@ -11,6 +11,7 @@ dependencies = [
     "numpy>=2.0.2",
     "peft>=0.13.2",
     "pydub>=0.25.1",
+    "python-multipart>=0.0.19",
     "ruff>=0.8.0",
     "scipy>=1.14.1",
     "sounddevice>=0.5.1",
