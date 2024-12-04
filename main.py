@@ -33,6 +33,11 @@ async def get_client_id(request: Request):
     return client_id
 
 
+@app.get("/")
+async def hello():
+    return "Hello World!"
+
+
 @app.post("/process-audio/")
 async def process_audio(
     file: UploadFile = File(...), client_id: str = Depends(get_client_id)

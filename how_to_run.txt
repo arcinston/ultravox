@@ -3,3 +3,11 @@ uv sync
 
 to run the server:
 uv run uvicorn main:app --host 0.0.0.0 --port 8000
+
+to send a request:
+curl -X POST "http://localhost:8000/process-audio/" \
+  -H "X-Client-ID: client123" \
+  -F "file=@test.m4a"
+
+to check if online:
+curl -X GET "http://localhost:8000/"
